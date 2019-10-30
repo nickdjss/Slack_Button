@@ -17,7 +17,7 @@ board.on('ready', function() {
      btn.on("down", function() {   // on button press...
         console.log("down");       // print "down" to the console
 
-        request.post({						// ..then submit a post request at the webhook url. this will trigger it.
+        request.post({		// ..then submit a post request at the webhook url. this will trigger it.
             url: url
    }, function(error, response, body) {    //responses are logged here
         console.log('Body response was ', body);
