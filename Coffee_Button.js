@@ -15,11 +15,15 @@ board.on('ready', function() {
 
 
      btn.on("down", function() {   // on button press...
-        console.log("down");       // print "down" to the console
+        console.log("down");       // print "down" to the console..
 
-        request.post({		// ..then submit a post request at the webhook url. this will trigger it.
-            url: url
-   }, function(error, response, body) {    //responses are logged here
+        request.post(	url, {				// ..then submit a post request at the webhook url. this will trigger it
+
+	 // json: {                       //You can pass additional JSON data through the webhook if you want.
+		//  value1: 15                  // this can be used in IFTTT by calling {{value1}}, {{value2}}, etc.
+	 // }
+	 
+ }, function(error, response, body) {    //responses are logged here
         console.log('Body response was ', body);
         console.log('Error was ', error);
    });
