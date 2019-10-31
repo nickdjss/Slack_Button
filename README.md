@@ -1,3 +1,3 @@
 # Slack_Button
 Barebones code for triggering an IFTTT Webhook.
-Check out IFTTT + Webhooks.pdf for more info.
+Check out [IFTTT + Webhooks.pdf for more info](../IFTTT + Webhooks.pdf)
